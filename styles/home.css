@@ -1,0 +1,112 @@
+/* Slider Dot Navigation */
+
+.slider-1 .et-pb-controllers a {
+    background-color: #ffff00 !important;
+	
+  /*  border-radius: 50px;
+    margin-right: 10px;
+    padding: 4px;*/
+    border: 3px solid #ffffff;
+    transition: all .4s ease;
+}
+
+.slider-1 .et-pb-controllers a:hover {
+    transition: all .4s ease;
+	transform: scale(1.1);
+}
+
+.slider-1 a.et-pb-active-control {
+    padding: 0 !important;
+    border: 8px solid #fff !important;
+	transition: all .4s ease;
+}
+
+.slider-1 a.et-pb-active-control:hover {
+    transform: scale(1.1);
+    transition: all .4s ease;
+}
+
+/* Slider Arrow Navigation */
+
+.slider-1 .et-pb-arrow-prev:before {
+    content: "\23";
+   background: #C7A17A;
+    /*border-radius: 30px;*/
+    color: #ffffff;
+    padding: 4px 5px 4px 4px;
+    font-size: 30px;
+}
+
+.slider-1 .et-pb-arrow-prev {
+    transition: all .4s ease;
+}
+.slider-1 .et-pb-arrow-prev:hover {
+    transform: scale(1.2);
+    transition: all .4s ease;
+}
+
+.slider-1 .et-pb-arrow-next:before {
+    content: "\24";
+    background: #C7A17A;
+   /* border-radius: 30px;
+    color: #ffffff;*/
+    padding: 4px 5px 4px 4px;
+    font-size: 30px;
+}
+
+.slider-1 .et-pb-arrow-next {
+    transition: all .4s ease;
+}
+.slider-1 .et-pb-arrow-next:hover {
+	transform: scale(1.2);
+    transition: all .4s ease;
+	   
+}
+
+/* Home 2 Slider Text Animation */
+
+.slider-1 .et_pb_slide_content p{
+	animation-duration: .7s !important;
+    animation-delay: 1.4s !important;
+	animation-timing-function: ease-in-out;
+    animation-fill-mode: both;
+	animation-name: flipInX;
+}
+
+.slider-1 .et_pb_button_wrapper{
+	animation-duration: .7s !important;
+    animation-delay: 1s !important;
+	animation-timing-function: ease-in-out;
+    animation-fill-mode: both;
+	animation-name: fadeInLeft;
+}
+/*
+ *  Testimonial Page Slider Icon Customisaton
+ * 
+ */
+
+.dr-slider .et-pb-slider-arrows .et-pb-arrow-prev:before {
+    font-size: 30px;
+    content: "\e045";
+}
+ 
+.dr-slider .et-pb-slider-arrows .et-pb-arrow-next:before {
+    font-size: 30px;
+    content: "\e046";
+}
+
+
+/*
+ *  Team Members Imnage Customisation
+ * 
+ */
+/*Normal State*/
+.team  img {
+transition: .5s ease-in-out;
+	
+}
+		/*Hover State*/
+.team  img:hover {
+ transform: scale(1.2) rotate(-0deg);
+    transition: .5s ease-in-out;
+	}

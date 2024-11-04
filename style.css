@@ -1,0 +1,607 @@
+/*======================================
+Theme Name: Ezcafe Divi Child Theme
+Theme URI: https://ezcafe.duogeeks.com/
+Description: Ez Cafe comes with the perfect blend of highly customizable predesigned pages, flexible options, and beautiful elements for your coffee shop website.
+Version: 2.0
+Author: Lovish Gulati
+Author URI: https://ezcafe.duogeeks.com/
+Template: Divi
+======================================*/
+
+/* You can add your own CSS styles here. Use !important to overwrite styles if needed. */
+
+
+/*set the default background color of the header section*/
+.pa-header {
+	background: transparent;
+	-webkit-transition: background-color 2s ease-out;
+	-moz-transition: background-color 2s ease-out;
+	-o-transition: background-color 2s ease-out;
+	transition: background-color 2s ease-out;
+}
+
+
+/*set the background color of the fixed header when scrolling*/
+.pa-fixed-header {
+	background-color: #000000!important;
+	-webkit-transition: background-color 2s ease-out;
+	-moz-transition: background-color 2s ease-out;
+	-o-transition: background-color 2s ease-out;
+	transition: background-color 2s ease-out;
+}
+
+
+
+/**************
+ * ************
+ *  Desktop drop
+ * *************
+ ****************/
+/*add point on top of the Divi menu submenu dropdown*/
+nav > ul > li > ul:after {
+    position: absolute;
+    left: 20%;
+    margin-left: -20px;
+    top: -15px;
+    width: 0;
+    height: 0;
+    content:'';
+    border-left: 13px solid transparent;
+    border-right: 13px solid transparent;
+    border-bottom: 13px solid #c7a17a;
+}
+
+
+/*dropdown menu padding*/
+.et_pb_menu_0_tb_header.et_pb_menu .nav li ul.sub-menu a {
+padding-left: 0px;
+padding-right: 0px;
+padding-top: 10px;
+padding-bottom: 10px;
+	font-size: 16px!important;
+    line-height: 1.9em;
+
+}
+
+
+
+
+/* ##### DROPDOWN MENU STYLES ##### */
+
+#top-menu .sub-menu {
+   background-color: #001730!important;
+	color: #FFFFFF!important;/* Background color dropdown */
+   border-top: 3px solid #c7a17a; /* Top border color dropdown */
+}
+
+#top-menu .sub-menu li a {
+   font-size: 13px; /* Font size dropdown */
+   width: 100%;
+   color: #fff;
+   border-bottom: 1px solid #c7a17a!important; /* Border bottom menu item color */
+}
+
+.sub-menu li:hover {
+   background-color: #c7a17a!important;
+	color: #fff!important/* Hover color menu item */
+}
+
+.sub-menu .current_page_item {
+   background-color: #c7a17a; /* Current menu item color dropdown */
+		color: #fff!important/* Hover color menu item */
+
+}
+
+#top-menu .sub-menu li {
+   padding-left: 0px!important;
+   padding-right: 0px;
+   width: 100%;
+}
+
+#top-menu li li a {
+   padding-top: 10px;
+   padding-bottom: 8px;
+}
+
+#top-menu .sub-menu {
+   padding-top: 0;
+   padding-bottom: 0px;
+ padding-left: 0px!important;
+	 padding-right: 0px;
+
+}
+
+.nav ul li a:hover {
+   opacity: 1;
+   background-color: rgba(0,0,0,0);
+}
+
+.et_pb_menu_0_tb_header.et_pb_menu .et-menu-nav li ul.sub-menu {
+    padding: 10px;
+    width: auto!important;
+}
+
+.et-menu li li a {
+    padding: 6px 20px;
+    width: 200px!important;
+}
+
+.et_pb_menu_0_tb_header.et_pb_menu .nav li ul.sub-menu a:hover {
+    color: #fff!important;
+}
+
+
+/*****------- Mobile Nested Submenu  -------****/
+
+
+
+/** This hides the sub menu items on mobile **/
+#page-container .mobile_nav li ul.hide {
+    display: none !important;
+}
+
+
+/** This adjusts the positioning and the background transparency of the parent menu item on mobile **/
+#page-container .mobile_nav .menu-item-has-children {
+    position: relative;
+}
+#page-container .mobile_nav .menu-item-has-children > a {
+    background: transparent;
+}
+
+
+/** This styles the icon and moves it to the right **/
+#page-container .mobile_nav .menu-item-has-children > a + span {
+    position: absolute;
+    right: 0;
+    top: 0;
+    padding: 10px 20px;
+    font-size: 20px;
+    font-weight: 700;
+    cursor: pointer;
+    z-index: 3;
+}
+
+
+/** Here you can swap out the actual icons **/
+#page-container span.menu-closed:before {
+    content: "\4c";
+    display: block;
+    color: #000;
+    font-size: 16px;
+    font-family: ETmodules;
+}
+#page-container span.menu-closed.menu-open:before {
+    content: "\4d";
+}
+
+/*
+ * 
+ */
+/* DATE TIME PICKER LOOK
+ * 
+ */
+.xdsoft_datetimepicker {
+   box-shadow: 0 15px 40px 6px rgba(0, 0, 0, 0.1)!important;
+}
+
+.xdsoft_datetimepicker .xdsoft_calendar td.xdsoft_default,
+.xdsoft_datetimepicker .xdsoft_calendar td.xdsoft_current,
+.xdsoft_datetimepicker .xdsoft_timepicker .xdsoft_time_box>div>div.xdsoft_current {
+   background: #C7A17A;
+   box-shadow: #C7A17A 0 1px 3px 0 inset;
+}
+
+.xdsoft_datetimepicker .xdsoft_calendar td.xdsoft_default:hover {
+   background: #ffffff!important;
+   box-shadow: #ffffff 0 1px 3px 0 inset!important;
+}
+
+.xdsoft_datetimepicker .xdsoft_calendar td.xdsoft_today {
+   color: #ffffff!important;
+}
+
+.xdsoft_datetimepicker .xdsoft_datepicker {
+   width: 350px!important;
+}
+
+.xdsoft_datetimepicker .xdsoft_timepicker {
+   width: 100px!important;
+}
+
+.xdsoft_datetimepicker .xdsoft_calendar td,
+.xdsoft_datetimepicker .xdsoft_calendar th {
+   background: #ffffff;
+   border: 2px solid #F6F4EF;
+}
+
+.xdsoft_datetimepicker.xdsoft_noselect.xdsoft_default {
+   padding: 20px;
+   border-radius: 10px;
+   border: none;
+}
+
+.xdsoft_datetimepicker .xdsoft_timepicker .xdsoft_time_box>div>div {
+   background: #ffffff;
+   border-top: 2px solid #F6F4EF;
+   color: #333;
+   font-size: 16px;
+   text-align: center;
+   border-collapse: collapse;
+   cursor: pointer;
+   border-bottom-width: 0;
+   height: 36px;
+   line-height: 36px;
+   padding: 0 8px;
+}
+
+.xdsoft_datetimepicker .xdsoft_calendar td,
+.xdsoft_datetimepicker .xdsoft_calendar th {
+   background: #ffffff;
+   border: 2px solid #F6F4EF;
+   color: #333;
+   font-size: 16px;
+   height: 36px;
+}
+
+.xdsoft_datetimepicker .xdsoft_timepicker .xdsoft_time_box {
+   border-bottom: 2px solid #F6F4EF;
+}
+
+.xdsoft_time_box {
+   border: 2px solid #F6F4EF;
+}
+/*
+*/
+/*place button modules next to each other in the same column*/
+/*
+*/
+.pa-inline-buttons .et_pb_button_module_wrapper {
+    display: inline-block;
+}
+/* Simple Black Divi Back To Top Button*/
+
+.et_pb_scroll_top.et-pb-icon {
+  background-color:#C7A17A;
+  color: white;
+	
+  margin-right:20px;
+  border-radius:0px;
+  padding: 10px;
+  transition: .5s ease;
+}
+
+.et_pb_scroll_top.et-pb-icon:hover {
+  background-color:#000000;
+  transition: .5s ease;
+  transform:translatey(-8px);
+}
+
+
+/*
+ *  Testimonial Page Slider Icon Customizaton
+ * 
+ */
+
+.dr-slider .et-pb-slider-arrows .et-pb-arrow-prev:before {
+    font-size: 30px;
+    content: "\e045";
+}
+ 
+.dr-slider .et-pb-slider-arrows .et-pb-arrow-next:before {
+    font-size: 30px;
+    content: "\e046";
+}
+
+
+/*
+ *  Contact Form Button Center Alignment
+ * 
+ */
+
+.et_contact_bottom_container {
+    float: none;
+    text-align: left;
+    display: block !important;
+	width:100%;
+}
+
+
+/********* Lightbox Styling ***********/
+
+
+/* Lightbox Zoom out cursor change */
+.mfp-zoom-out-cur, .mfp-zoom-out-cur .mfp-image-holder .mfp-close {
+    cursor: inherit;
+}
+
+
+/* Lightbox close icon styling */
+.mfp-iframe-holder .mfp-close, .mfp-image-holder .mfp-close {
+    font-size: 50px;
+    top: -5px;
+    opacity: 1;
+}
+
+
+
+
+
+
+
+
+@media (max-width: 767px) {
+ body.et-db #et-boc .et-l .et_pb_shop ul.products.columns-1 li.product, 
+ body.et-db #et-boc .et-l .et_pb_shop ul.products.columns-2 li.product, 
+ body.et-db #et-boc .et-l .et_pb_shop ul.products.columns-3 li.product, 
+ body.et-db #et-boc .et-l .et_pb_shop ul.products.columns-4 li.product, 
+ body.et-db #et-boc .et-l .et_pb_shop ul.products.columns-5 li.product, 
+ body.et-db #et-boc .et-l .et_pb_shop ul.products.columns-6 li.product, 
+ body.et-db #et-boc .et-l .et_pb_wc_related_products ul.products.columns-1 li.product,  
+ body.et-db #et-boc .et-l .et_pb_wc_related_products ul.products.columns-2 li.product,  
+ body.et-db #et-boc .et-l .et_pb_wc_related_products ul.products.columns-3 li.product, 
+ body.et-db #et-boc .et-l .et_pb_wc_related_products ul.products.columns-4 li.product, 
+ body.et-db #et-boc .et-l .et_pb_wc_related_products ul.products.columns-5 li.product, 
+ body.et-db #et-boc .et-l .et_pb_wc_related_products ul.products.columns-6 li.product, 
+ body.et-db #et-boc .et-l .et_pb_wc_upsells ul.products.columns-1 li.product, 
+ body.et-db #et-boc .et-l .et_pb_wc_upsells ul.products.columns-2 li.product, 
+ body.et-db #et-boc .et-l .et_pb_wc_upsells ul.products.columns-3 li.product, 
+ body.et-db #et-boc .et-l .et_pb_wc_upsells ul.products.columns-4 li.product, 
+ body.et-db #et-boc .et-l .et_pb_wc_upsells ul.products.columns-5 li.product, 
+ body.et-db #et-boc .et-l .et_pb_wc_upsells ul.products.columns-6 li.product {
+        width: 100%!important;
+        margin-right: 0%!important;
+    }
+}
+@media all and (max-width: 767px) {
+     .woocommerce-page ul.products li.product:nth-child(n) {
+        margin: 0 0 11.5%!important;
+        width: 100%!important;
+    }
+}
+/*quick view button full width*/
+a.button.yith-wcqv-button {
+    width: 100%!important;
+}
+
+
+.disable-lightbox a {
+pointer-events: none;
+}
+.disable-lightbox .et_overlay {
+display: none ! important;
+}
+
+/****************************/
+/*====Shop page======*/
+/***************************/
+
+/*====Shop module add to cart button arrow icon ======*/
+.da_shop_v1 ul.products li a.button {
+	border-radius: 50% !important;
+	width:40px;
+	height:40px;
+	line-height:40px;
+	position:absolute;
+	right:0;
+	bottom:20px;
+	font-size:0;
+	background:#0a0a0b;
+	border:1px solid rgba(0, 0, 0, .1);
+	text-align:center;
+	color:inherit;
+	z-index:5;
+-webkit-transition:all .2s;
+-moz-transition:all .2s;
+transition:all .2s
+}
+.da_shop_v1 ul.products li a.button:before {
+	color:#fff;
+	content:"\e015";
+
+	position:relative!important;
+	left:auto!important;
+	right:0px !important;
+	top:0!important;
+	text-align:center;
+	margin:0 auto!important;
+	opacity:1!important;
+	display:block;
+	font-size:22px;
+	line-height:38px;
+	font-weight:300!important;
+	font-family:ETmodules!important
+}
+.da_shop_v1 ul.products li a.button.product_type_external::before, .da_shop_v1 ul.products li a.button.product_type_grouped::before, .da_shop_v1 ul.products li a.button.product_type_variable::before {
+border-radius:50%;
+background:#0a0a0b;
+}
+.da_shop_v1 ul.products li a.button.added {
+	background:#C7A17A !important;
+}
+.da_shop_v1 ul.products li a.button.added::before {
+content: "\e052";
+
+}
+/*====Shop module add to cart button arrow icon after click ======*/
+
+.da_shop_v1 ul.products li a.button.loading {
+	opacity:1;
+	-webkit-animation: rotate 1.5s linear infinite;
+	animation: rotate 1.5s linear infinite;
+}
+.da_shop_v1 ul.products li a.button.loading::before {
+content: "\e02d";
+opacity:1;
+}
+@-webkit-keyframes rotate {
+to {
+-webkit-transform: rotate(360deg);
+}
+}
+@keyframes rotate {
+to {
+transform: rotate(360deg);
+}
+}
+@media only screen and (max-width : 480px) {
+	.da_shop_v1 ul.products.columns-4 li.product {
+		width: 100% !important;
+	}
+}
+/*====Shop moduleview cart button arrow ======*/
+
+  .da_shop_v1 .woocommerce a.added_to_cart.wc-forward {
+	background: #C7A17A;
+	width: 38%;
+	position: absolute!important;
+	bottom: 22px;
+    right: 10px;
+	color: #fff;
+	text-transform: uppercase;
+	padding: 5px !important;
+	border: none !important;
+	right: 0;
+	border-radius:  30px;
+	line-height: inherit;
+	  font-family: 'Merriweather';
+    text-transform: capitalize;
+}
+.da_shop_v1 .woocommerce a.added_to_cart.wc-forward:hover {
+	background: #C7A17A;
+}
+.da_shop_vf  .woocommerce a.added_to_cart.wc-forward {
+    transition: all .35s ease-in-out;
+    position: absolute;
+    right: 15px;
+    bottom: 15px;
+    background: #000;
+    padding: 0px 30px 0px 10px;
+    border-radius: 30px;
+    color: #fff;
+    line-height: 30px;
+}
+.da_shop_vf  .woocommerce a.added_to_cart {
+    padding-top: .5em;
+    display: inline-block;
+}
+/*====Preview product bitton hide======*/
+
+
+  a.preview-product {
+    display: none;
+}
+/*====Shop title after double line======*/
+
+.da_shop_v1 .woocommerce ul.products li a h2.woocommerce-loop-product__title:before {
+	bottom:-2px;
+	content:'';
+	height:5px;
+	left:0;
+	position:absolute;
+	width:35px;
+	background-color:#C7A17A;
+	z-index:1
+}
+.da_shop_v1 .woocommerce ul.products li a h2.woocommerce-loop-product__title:after {
+	    bottom: 0;
+    content: '';
+    height: 2px;
+    left: 0;
+  	bottom:-1px;
+    background-color: #0a0a0b;
+    position: absolute;
+  width: 100%;}
+
+  
+  
+  
+  /*====image overlay ======*/
+  /*====woocommerceImage overlay======*/
+
+
+.da_shop_v1o .woocommerce ul.products li a .et_shop_image .et_overlay:before {
+top: -100%;
+    background: #fff;
+    box-shadow: 0 0 10px #fff;
+    font-size: 15px!important;
+    padding: 10px;
+    border-radius: 50%;
+    right: 20px;
+    left: auto!important;
+    color: #C7A17A!important;
+}
+
+/***************theme builder page icon position***********/
+.da_shop_v .woocommerce ul.products li a .et_shop_image .et_overlay:before {
+top: 10%!important;
+    background: #fff;
+    box-shadow: 0 0 10px #fff;
+    font-size: 15px!important;
+    padding: 10px;
+    border-radius: 50%;
+    right: 20px;
+    left: auto!important;
+    color: #C7A17A!important;
+}
+
+.da_shop_v1o .woocommerce ul.products li:hover a .et_shop_image .et_overlay:before {
+	top: 35px;
+}
+.da_shop_v1o .woocommerce ul.products li a .et_shop_image img {
+	margin-bottom:0px !important;
+}
+.da_shop_v1o .woocommerce ul.products li a .et_shop_image:before {
+	content: "";
+	width: 100%;
+	height: 100%;
+	background: rgba(24, 35, 51, .53);
+	position: absolute;
+	bottom: -100%;
+	left: 0;
+	z-index: 1;
+-webkit-transition: all .5s;
+-moz-transition: all .5s;
+-o-transition: all .5s;
+-ms-transition: all .5s;
+transition: all .5s;
+}
+.da_shop_v1o .woocommerce ul.products li:hover a .et_shop_image:before {
+	bottom: 0;
+}
+/*====woocommerce button arrow icon hide======*/
+
+/****** REMOVE ARROWS ON HOVER AND ADJUST PADDING ******/
+.woocommerce #content input.button.alt:after, .woocommerce #content input.button:after, .woocommerce #respond input#submit.alt:after, .woocommerce #respond input#submit:after, .woocommerce a.button.alt:after, .woocommerce a.button:after, .woocommerce button.button.alt:after, .woocommerce button.button:after, .woocommerce input.button.alt:after, .woocommerce input.button:after, .woocommerce-page #content input.button.alt:after, .woocommerce-page #content input.button:after, .woocommerce-page #respond input#submit.alt:after, .woocommerce-page #respond input#submit:after, .woocommerce-page a.button.alt:after, .woocommerce-page a.button:after, .woocommerce-page button.button.alt:after, .woocommerce-page button.button:after, .woocommerce-page input.button.alt:after, .woocommerce-page input.button:after {
+	content: none !important;
+}
+.woocommerce #content input.button.alt:hover, .woocommerce #content input.button:hover, .woocommerce #respond input#submit.alt:hover, .woocommerce #respond input#submit:hover, .woocommerce a.button.alt:hover, .woocommerce a.button:hover, .woocommerce button.button.alt:hover, .woocommerce button.button:hover, .woocommerce input.button.alt:hover, .woocommerce input.button:hover, .woocommerce-page #content input.button.alt:hover, .woocommerce-page #content input.button:hover, .woocommerce-page #respond input#submit.alt:hover, .woocommerce-page #respond input#submit:hover, .woocommerce-page a.button.alt:hover, .woocommerce-page a.button:hover, .woocommerce-page button.button.alt:hover, .woocommerce-page button.button:hover, .woocommerce-page input.button.alt:hover, .woocommerce-page input.button:hover, .woocommerce button.button:disabled, .woocommerce button.button:disabled[disabled] {
+	padding: .3em 1em !important; /* this is Divis default button padding */
+}
+
+
+
+
+/* COUPONS AND UPDATE BUTOON STYLE*/
+
+.woocommerce #content input.button, .woocommerce #respond input#submit, .woocommerce a.button, .woocommerce button.button, .woocommerce input.button, .woocommerce-page #content input.button, .woocommerce-page #respond input#submit, .woocommerce-page a.button, .woocommerce-page button.button, .woocommerce-page input.button {
+    background: #C7A17A;
+    color: #fff !important;
+    font-family: 'Mulish';
+	font-weight:700;
+    font-size: 14px;
+	padding:0.6em 1.5em;
+    border-radius: 0px;
+}
+
+/*HOVER STYLE*/
+
+.woocommerce #content input.button:hover, .woocommerce #respond input#submit:hover, .woocommerce a.button:hover, .woocommerce button.button:hover, .woocommerce input.button:hover, .woocommerce-page #content input.button:hover, .woocommerce-page #respond input#submit:hover, .woocommerce-page a.button:hover, .woocommerce-page button.button:hover, .woocommerce-page input.button:hover{
+    background: #000;
+    color: #fff !important;
+    font-family: 'Mulish';
+	font-weight:700;
+    font-size: 14px;
+	padding:0.6em 1.5em;
+    border-radius: 0px;
+}

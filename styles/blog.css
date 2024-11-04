@@ -1,0 +1,282 @@
+/*
+ * 
+ *  style the wp-pagenavi pagination links
+ * 
+ */
+
+.wp-pagenavi a,
+.wp-pagenavi span {
+	color: #000000;
+	background: #f1f3f5;
+	font-size: 1em !important;
+	line-height: 1em;
+	font-weight: bold !important;
+	padding: 0.45em 0.8em !important;
+	border-radius: 100px;
+	transition: all .5s;
+}
+
+
+/*style the wp-pagenavi current page number*/
+
+.wp-pagenavi span.current {
+	color: #ffffff !important;
+	background: #C7A17A !important;
+	border-radius: 100px;
+}
+
+
+/*style the wp-pagenavi pagination links on hover*/
+
+.wp-pagenavi a:hover {
+	color: #ffffff!important;
+	background: #C7A17A !important;
+}
+
+
+
+/*style the wp-pagenavi pages text*/
+
+.wp-pagenavi .pages {
+	background: none;
+}
+
+
+/*remove border and center the wp-pagenavi links*/
+
+.wp-pagenavi {
+	border-top: none;
+	text-align: center;
+}
+
+/*
+ * 
+/* Sidebar widget Recent Post Design */
+/*
+*/
+div#recent-posts-2 a{
+
+    background: #ffffff;
+    display: flex;
+	border-bottom:1px solid #C7A17A !important;
+    padding: 10px 10px;
+    padding-top: 10px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px; 
+}
+
+div#recent-posts-2 a:hover{
+
+    background: #F6F4EF;
+    display: flex;
+	border-bottom:1px solid #C7A17A !important;
+    padding: 10px 10px;
+    padding-top: 10px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px; 
+}
+
+h4.widgettitle{
+    background: #C7A17A;
+    padding: 15px;
+	border-radius:0px;
+    padding-left: 16px;
+    margin-bottom: 10px;
+}
+
+li.cat-item.cat-item a{
+    background: #ffffff;
+	
+    padding: 0px;
+    margin: 10px 0;
+}
+
+li.cat-item.cat-item a:hover {
+    background: #F6F4EF;
+		border-bottom:1px solid #C7A17A !important;
+
+    padding: 0px;
+    margin: 10px 0;
+}
+
+li.cat-item.cat-item a{
+	display:flex;
+	padding:10px 20px;	
+}
+li.cat-item.cat-item a:hover{
+	display:flex;
+	padding:10px 20px;	
+}
+
+#aboutmewidget-2 {
+    color: black;
+}
+
+/*blog image aspect ratio square 1:1*/
+
+.pa-blog-image-1-1 .entry-featured-image-url {
+  padding-top: 100%;
+  display: block;
+}
+
+.pa-blog-image-1-1 .entry-featured-image-url img {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  object-fit: cover;
+}
+
+
+
+/*
+*/
+/*place button modules next to each other in the same column*/
+/*
+*/
+.pa-inline-buttons .et_pb_button_module_wrapper {
+    display: inline-block;
+}
+
+
+/*set the image width*/
+
+.pa-blog-sidebar-list .entry-featured-image-url {
+	width: 100px;
+	float: left;
+	margin-bottom: 0!important;
+}
+
+/*
+/*set the text width*/
+/* BLOD SIDEBAR
+ * 
+ */
+.pa-blog-sidebar-list .entry-title,
+.pa-blog-sidebar-list .post-meta {
+	width: calc(100% - 100px);
+	float: left;
+	padding-left: 20px;
+}
+
+
+/*make the image square*/
+
+.pa-blog-sidebar-list .entry-featured-image-url {
+	padding-top: 100px;
+	display: block;
+}
+
+.pa-blog-sidebar-list .entry-featured-image-url img {
+	position: absolute;
+	height: 100%;
+	width: 100%;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	object-fit: cover;
+}
+
+
+/*adjust the spacing and add a border between the posts*/
+
+.pa-blog-sidebar-list .et_pb_post:not(:last-child) {
+	border-bottom: 1px solid #dddddd!important;
+	padding-bottom: 10px;
+	margin-bottom: 10px;
+}
+
+
+/*
+ * 
+ * Sidebar Category Spacing
+ * 
+ */
+
+.et_pb_widget.widget_categories ul li {
+    margin-bottom: 0em !important;
+    padding: 0em !important;
+}
+
+/*
+ * 
+/*add padding, color, margin on tag which show in sidebar*/
+/*
+ */ 
+.tagcloud a {
+    font-size: 12px!important;
+    padding: 1em 2em;
+	color: white !important;
+    background: #000000;
+    display: inline-block;
+    margin-bottom: 8px;
+	margin-left: 2px;
+	color: #ffffff !important;
+	margin-right: 2px;
+    border-radius: 0px;
+    -webkit-transition: all .2s ease-in-out;
+    transition: all .2s ease-in-out;
+}
+
+.et_pb_bg_layout_light .et_pb_widget li a {
+    color: #000000;
+}
+/*sidebar tag hover color*/
+
+.tagcloud a:hover {
+	color: white !important;
+    background: #C7A17A;
+}
+/*ca*/
+/* changes weidget category */
+.et_pb_widget.widget_categories ul li a {
+    width: 80%;
+    display: inline-block;
+    padding: 6.5px!important;
+    color: #000;
+}
+.et_pb_widget.widget_categories ul li {
+    background: transparent;
+}
+
+.et_pb_widget.widget_categories ul li a:hover {
+    width: 80%!important;
+    display: inline-block;
+    padding: 6.1px!important;
+    color: #000;
+}
+
+/*recent post weight*/
+/* Recent Post Title */
+
+img.attachment-75x75.size-75x75.wp-post-image {
+    border-radius: 0px;
+}
+.rpwwt-post-author {
+    font-weight: 700!important;
+    color: #c7a17a;
+}
+/*
+ * search BUTTON style 
+ * 
+ */ 
+.widget_search input#searchsubmit {
+    padding: .7em;
+    height: 40px!important;
+    margin: 0;
+    font-size: 14px;
+    line-height: normal!important;
+    border: 1px solid #000000;
+    color: #ffffff;
+}
+
+.widget_search #searchsubmit {
+    background-color: #000000;
+	width: 70px;
+}
